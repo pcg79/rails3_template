@@ -27,11 +27,8 @@ get "http://github.com/rwc9u/rails3_template/raw/master/application.html.haml", 
 # fix some issues with handling shoulda in Rails 3
 apply "http://github.com/rwc9u/rails3_template/raw/master/template_testing.rb"
 
-create_file 'config/deploy.rb', <<-DEPLOY
-application = '#{app_name}'
-repository = ''
-hosts = %w()
-DEPLOY
+# capistrano config
+apply "http://github.com/rwc9u/rails3_template/raw/master/template_cap.rb"
 
 apply "http://github.com/rwc9u/rails3_template/raw/master/template_git.rb"
 
