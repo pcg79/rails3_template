@@ -21,8 +21,8 @@ run "compass init --using blueprint --app rails -x sass --sass-dir app/styleshee
 
 get "http://code.jquery.com/jquery-1.4.2.min.js", "public/javascripts/jquery.js"
 get "http://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
-# get "http://github.com/rwc9u/rails3_template/raw/master/screen.scss", "app/stylesheets/screen.scss"
-# get "http://github.com/rwc9u/rails3_template/raw/master/application.html.haml", "app/views/layouts/application.html.haml"
+get "http://github.com/rwc9u/rails3_template/raw/master/screen.sass", "app/stylesheets/screen.sass"
+get "http://github.com/rwc9u/rails3_template/raw/master/application.html.haml", "app/views/layouts/application.html.haml"
 
 create_file 'config/deploy.rb', <<-DEPLOY
 application = '#{app_name}'
