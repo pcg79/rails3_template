@@ -33,8 +33,6 @@ repository = ''
 hosts = %w()
 DEPLOY
 
-git :init
-git :add => '.'
-git :commit => '-am "Initial commit"'
+apply "http://github.com/rwc9u/rails3_template/raw/master/template_git.rb"
 
 puts "SUCCESS!"
