@@ -13,6 +13,8 @@ config.generators do |g|
   g.template_engine :haml
   g.orm             :active_record
   g.test_framework  :shoulda
+  g.fallbacks[:shoulda] = :test_unit
+  g.fallbacks[:haml] = :erb
 end
 GENERATORS
 
